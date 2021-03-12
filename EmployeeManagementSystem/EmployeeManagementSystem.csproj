@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{61B19FA5-3791-4EFB-871F-AA78B766CBF6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EmployeeManagementSystem</RootNamespace>
+    <AssemblyName>EmployeeManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddUserControl.Designer.cs">
+      <DependentUpon>AddUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLoginUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AdminLoginUserControl.Designer.cs">
+      <DependentUpon>AdminLoginUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendenceUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AttendenceUserControl.Designer.cs">
+      <DependentUpon>AttendenceUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashBoard.Designer.cs">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeleteUserControl.Designer.cs">
+      <DependentUpon>DeleteUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EAttendenceCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EAttendenceCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EDetailsCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EDetailsCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EleaveCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EleaveCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EmployeeDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeDashBoard.Designer.cs">
+      <DependentUpon>EmployeeDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeDetailsUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmployeeDetailsUserControl.Designer.cs">
+      <DependentUpon>EmployeeDetailsUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeLeaveMailUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmployeeLeaveMailUserControl.Designer.cs">
+      <DependentUpon>EmployeeLeaveMailUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeLoginUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmployeeLoginUserControl.Designer.cs">
+      <DependentUpon>EmployeeLoginUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EsalaryCrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EsalaryCrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LeaveUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LeaveUserControl.Designer.cs">
+      <DependentUpon>LeaveUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportUserControl.Designer.cs">
+      <DependentUpon>ReportUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SalaryUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SalaryUserControl.Designer.cs">
+      <DependentUpon>SalaryUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SearchUserControl.Designer.cs">
+      <DependentUpon>SearchUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendMailUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SendMailUserControl.Designer.cs">
+      <DependentUpon>SendMailUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UpdateUserControl.Designer.cs">
+      <DependentUpon>UpdateUserControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddUserControl.resx">
+      <DependentUpon>AddUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLoginUserControl.resx">
+      <DependentUpon>AdminLoginUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendenceUserControl.resx">
+      <DependentUpon>AttendenceUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashBoard.resx">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteUserControl.resx">
+      <DependentUpon>DeleteUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EAttendenceCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EAttendenceCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EDetailsCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EDetailsCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EleaveCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EleaveCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeDashBoard.resx">
+      <DependentUpon>EmployeeDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeDetailsUserControl.resx">
+      <DependentUpon>EmployeeDetailsUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeLeaveMailUserControl.resx">
+      <DependentUpon>EmployeeLeaveMailUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeLoginUserControl.resx">
+      <DependentUpon>EmployeeLoginUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EsalaryCrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>EsalaryCrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeaveUserControl.resx">
+      <DependentUpon>LeaveUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ReportUserControl.resx">
+      <DependentUpon>ReportUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalaryUserControl.resx">
+      <DependentUpon>SalaryUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchUserControl.resx">
+      <DependentUpon>SearchUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendMailUserControl.resx">
+      <DependentUpon>SendMailUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateUserControl.resx">
+      <DependentUpon>UpdateUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
